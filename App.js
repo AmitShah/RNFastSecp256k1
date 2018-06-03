@@ -5,11 +5,13 @@
  */
 
 import React, { Component } from 'react';
+
 import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Button
 } from 'react-native';
 import FastSecp256k1BridgeNativeModule from './FastSecp256k1BridgeNativeModule';
 
@@ -21,9 +23,12 @@ const instructions = Platform.select({
 });
 
 FastSecp256k1BridgeNativeModule.exampleMethod();
-FastSecp256k1BridgeNativeModule.verifyMessage("HELLO WORLD").then(console.log);
 
 FastSecp256k1BridgeNativeModule.keccak256("0x68656c6c6f").then(console.log);
+
+function clicker(){
+  FastSecp256k1BridgeNativeModule.verifyMessage("HELLO WORLD").then(console.log);
+}
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -39,6 +44,12 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+       <Button
+        onPress={clicker}
+        title="Learn More"
+        color="#841584"
+        accessibilityLabel="Learn more about this purple button"
+      />
       </View>
     );
   }

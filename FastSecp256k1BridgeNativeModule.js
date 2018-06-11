@@ -22,8 +22,8 @@ export default {
   	return FastSecp256k1Bridge.ecrecover(hash,r,s,v);
   },
 
-  ecsign(hash,pk){
-  	return FastSecp256k1Bridge.ecsign(hash,pk);
+  ecsign(data,pk){
+  	return FastSecp256k1Bridge.ecsign(data,pk);
   },
 
 

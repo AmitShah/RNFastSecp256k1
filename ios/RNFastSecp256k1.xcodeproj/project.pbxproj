@@ -35,8 +35,8 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* RNFastSecp256k1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNFastSecp256k1Tests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		3F23EABE20CDFF9A006074B5 /* secp256k1_lib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F23EABD20CDFF9A006074B5 /* secp256k1_lib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F9A7DFE20C0CB370039468D /* FastSecp256k1Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A7DFD20C0CB370039468D /* FastSecp256k1Bridge.m */; };
-		3F9A841D20C35C2B0039468D /* secp256k1_lib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9A841C20C35C2B0039468D /* secp256k1_lib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -325,7 +325,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3F9A841D20C35C2B0039468D /* secp256k1_lib.framework in Embed Frameworks */,
+				3F23EABE20CDFF9A006074B5 /* secp256k1_lib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,10 +355,9 @@
 		2D02E47B1E0B4A5D006451C7 /* RNFastSecp256k1-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNFastSecp256k1-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* RNFastSecp256k1-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNFastSecp256k1-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F23EABD20CDFF9A006074B5 /* secp256k1_lib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = secp256k1_lib.framework; sourceTree = "<group>"; };
 		3F9A7DD720C0CB370039468D /* FastSecp256k1Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastSecp256k1Bridge.h; sourceTree = "<group>"; };
 		3F9A7DFD20C0CB370039468D /* FastSecp256k1Bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastSecp256k1Bridge.m; sourceTree = "<group>"; };
-		3F9A841A20C283870039468D /* secp256k1_lib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = secp256k1_lib.framework; sourceTree = "<group>"; };
-		3F9A841C20C35C2B0039468D /* secp256k1_lib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = secp256k1_lib.framework; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -595,8 +594,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				3F9A841A20C283870039468D /* secp256k1_lib.framework */,
-				3F9A841C20C35C2B0039468D /* secp256k1_lib.framework */,
+				3F23EABD20CDFF9A006074B5 /* secp256k1_lib.framework */,
 				13B07FAE1A68108700A75B9A /* RNFastSecp256k1 */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNFastSecp256k1Tests */,
